@@ -1,0 +1,712 @@
+
+@font-face {
+    font-family: badaboom;
+    src: url(../fonts/badaboom.ttf)
+}
+.navbar{
+	border-radius:0px;
+	margin:0px;
+}
+#logo {
+    float: left;
+    margin-top: -10px;
+	z-index:200;
+}
+.topmargin{
+	    margin-top: 50px;
+
+}
+@media screen and (max-width: 415px) {
+    #logo{
+       display:none;
+    }
+
+.vidcontain {
+    position: relative margin-left: 0px;
+}
+#v0 {
+    display: block;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
+body {} svg {
+    top: 35%;
+    transform: translateY(-35%);
+    position: absolute;
+    overflow: hidden;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+}
+@media only screen and (max-width: 650px) {
+    svg {
+        width: 300px;
+    }
+}
+
+/*
+    .wrapper {
+      width:100%;
+      height:100vh;
+    display:block;
+    }
+
+    .wrapper video {
+      object-fit: contain
+     object-fit: fill;
+      object-fit: cover;
+      width:100%;
+      height:100%;
+    }
+	*/
+
+#glass {
+    clip: rect(0px, 60px, 200px, 0px);
+}
+
+p {
+    font-family: sans-serif;
+    line-height: 1.7;
+    color: black;
+    margin: 20px;
+}
+video::-webkit-media-controls {
+    display: none !important;
+}
+video::-webkit-media-controls {
+    display: none !important;
+}
+.rig {
+    max-width: 100%;
+    margin: 0 auto;
+    /*center aligned*/
+    
+    padding: 0;
+    font-size: 0;
+    /* Remember to change it back to normal font size if have captions */
+    
+    list-style: none;
+    background-color: #f2efea;
+	
+	
+}
+.rig li {
+    display: inline-block;
+    *display: inline;
+    /*for IE6 - IE7*/
+    /* width:25%;*/
+    
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	
+	
+}
+/* The wrapper for each item */
+
+.rig-cell {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding-bottom: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+/* If have the image layer */
+
+.rig-img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100% display: block;
+    width: 100%;
+    border: none;
+    /* transform:scale(1);*/
+    /* transition:all 1s; */
+    
+    overflow: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+	
+}
+
+/* If have the overlay layer */
+
+.rig-overlay {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+.rig li:hover .rig-bg {
+-webkit-box-shadow:inset 0px 0px 0px 4px #ff3227;
+    -moz-box-shadow:inset 0px 0px 0px 4px #ff3227;
+    box-shadow:inset 0px 0px 0px 4px #ff3227;
+		background-color:rgba(0,0,0,0.6) ;
+
+    }
+	
+.rig li:hover .rig-overlay {
+	filter: grayscale(90%);
+
+    }
+
+/* If have captions */
+
+.rig li:hover .rig-text {
+    opacity: 1;
+}
+.rig li:hover .rig-subtext {
+    opacity: 1;
+}
+.rig li:hover .rig-bg {
+    
+    opacity: 1;
+}
+
+    .rig li {
+        width: 33.3333%;
+    }
+
+
+@media (min-width: 576px) {
+    .rig li {
+        width: 25%;
+    }
+}
+@media (min-width: 768px) {
+    .rig li {
+        width: 25%;
+    }
+}
+@media (min-width: 992px) {
+    .rig li {
+        width: 25%;
+    }
+}
+@media (min-width: 1200px) {
+    .rig li {
+        width: 20%;
+    }
+}
+
+.rig-bg {
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /*For older IE*/
+    
+    transition: all .3s;
+    /* background-color:#3DC0F1;*/
+}
+@media (min-width: 971px) {
+    .rig-text {
+        height: 100%;
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Oswald', sans-serif;
+        font-weight: normal!important;
+        top: 55%;
+	 letter-spacing: 3px;
+    font-family: badaboom;
+    font-size:30px;
+
+    color:#f3291e;
+        /*For older IE*/
+        
+        transform: translateY(-40px);
+		opacity:0;
+
+    }
+    .rig-subtext {
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: 'Oswald', sans-serif;
+        font-weight: normal!important;
+        top: 70%;
+
+	 letter-spacing: 3px;
+    font-family: badaboom;
+    font-size:30px;
+    color:#ffffff;
+	        transform: translateY(-40px);
+
+opacity:0;
+
+}
+@media (max-width: 617px) {
+    .rig li {
+        width: 33.3333333333%;
+    }
+}
+@font-face {
+    font-family: badaboom;
+    src: url(../fonts/badaboom.ttf)
+}
+#search {} #myPopup {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+</style> <style> #scene {} #imgurl {
+    display: none;
+}
+.formtxt {
+    color: #ffffff;
+}
+form submit {
+    color: #000;
+}
+form input {
+    color: #000;
+}
+#upload-photo {} .uploadhome {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    height: 500px;
+    margin-top: -250px;
+    /* Half the height */
+    
+    margin-left: -160px;
+    /* Half the width */
+}
+}
+.uploadhome input {
+    width:213px;
+}
+.navbar a:link {
+    color:#ffffff;
+}
+/* visited link */
+
+.navbar a:visited {
+    color:#ffffff;
+}
+/* mouse over link */
+
+.navbar a:hover {
+    color:#ffffff;
+}
+/* selected link */
+
+.navbar a:active {
+    color:#ffffff;
+}
+
+img[src=""] {
+    display: none;
+}
+/*  SECTIONS  */
+
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+/*  COLUMN SETUP  */
+
+.col {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+    float:left;
+    padding-bottom: 10%;
+    text-align: center;
+    margin:1px;
+    overflow: hidden;
+}
+@media (min-width: 481px) {
+    .col {}
+}
+.col:first-child {
+    margin-left: 0;
+}
+/*  GROUPING  */
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1;
+    /* For IE 6/7 */
+}
+/*  GRID OF FIVE  */
+
+.span_5_of_5 {
+    width: 100%;
+}
+.span_4_of_5 {
+    width: 79.68%;
+}
+.span_3_of_5 {
+    width: 59.36%;
+}
+.span_2_of_5 {
+    width: 39.04%;
+}
+.span_1_of_5 {
+    width: 18.72%;
+}
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+    .span_1_of_5,
+    .span_2_of_5,
+    .span_3_of_5,
+    .span_4_of_5,
+    .span_5_of_5 {
+        width: 100%;
+    }
+}
+.login-page {
+    position:absolute;
+}
+.scrollbar {
+    height:230px;
+    overflow:auto;
+    margin-bottom: 25px;
+    padding-right:20px;
+}
+.textureinfo{
+	margin-top:50px;
+
+}
+.texturescrollbar{
+	
+    margin-bottom: 25px;
+    padding-right:30px;
+}
+
+.force-overflow {}
+/*
+ *  STYLE 2
+ */
+
+#style-2::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #dddddd;
+}
+#style-2::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+#style-2::-webkit-scrollbar-thumb {
+    background-color: #909090;
+}
+.form .sub-message {
+    letter-spacing: 2px;
+    font-family: badaboom;
+    font-size:20px;
+    margin: 15px 0 0;
+    color: #000000;
+}
+
+.topnav{
+	z-index:1;
+	  min-height: 50px;
+	top-margin:0px;
+    color:#ffffff;
+    border-style: none;
+    border-radius: 0px;
+    width:100%;
+    letter-spacing: 2px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+61,1993d2+61,1993d2+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+70,000000+71,1993d2+71,1993d2+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+71,000000+77,000000+77,1993d2+77,1993d2+77,1993d2+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+71,000000+77,000000+77,1993d2+77,2598d7+77,1993d2+100 */
+    
+
+    /* Old browsers */
+  
+    
+
+    margin:auto;
+
+    border:none;
+	margin-bottom:0px;
+	background-color:#22222c;
+
+}
+.navbar a {
+    font-family: badaboom;
+    font-size:20px;
+}
+
+.navbar-right {} .editorbg {
+
+}
+#customisation {
+    margin-top:50px;
+	    margin-bottom:50px;
+
+}
+.login-form h2 {
+    font-size:45px;
+    letter-spacing: 2px;
+    font-family: badaboom;
+}
+.greytxt {
+    color:#444444;
+}
+.yellowtxt {
+    color:#e00904;
+}
+.navbar{
+	color:#ffffff;
+}
+
+.texture-search{
+	padding-right:50px !important;
+	
+}
+.showcasenav input[type=text]  {
+ letter-spacing: 2px;
+	  font-family: badaboom;  outline: 0;
+	   border: none; /* <-- This thing here */
+      border-radius: 10px;
+  border-style: solid;
+  border-width: 2px; 
+  border-color:#fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  font-size: 22px;
+  color:#fff;
+  margin-top:0px;
+  height:100%;
+  background-color:#d10e14;
+  padding-top:14px;
+    padding-bottom:14px;
+	width:240px;
+	padding-right:-30px;
+}
+.showcasenav input[type=text]::placeholder  {
+  color:#fff;
+}
+
+.showcasenav .btn, .showcasenav .btn:focus, .showcasenav .btn:hover, .showcasenav .btn:active {
+    margin-left: -50px;
+	background:none !important;
+	color:white !important;
+	border:none !important;
+	outline:none !important;
+		box-shadow:none;
+
+}
+.showcasenav .btn {
+  float: none;
+}
+
+
+@media (max-width:1020px) {
+	.showcasenav input[type=text]  {
+	width:180px;
+}
+.i{
+	
+	padding:0;
+}
+	  .showcase-nav-form{
+           	  }
+	   .showcasenav-tabs .container{
+	  width:100%;
+	  
+		  }
+	 	 .topnav .container, .showcasenav .container {
+	  width:100% !important;
+	  
+		  }
+}
+@media (max-width:767px) {
+	  .showcase-nav-form{
+             display:block;	
+	  
+		  }
+	
+}
+
+    .showcasenav {
+border:none;
+background: #d10e14; 
+color:#ffffff;
+
+}
+
+.navbar-nav li a{
+	
+  text-align: center;
+}
+.showcasenav .navbar-nav li a{
+padding-top:26px;
+padding-bottom:25px;
+
+
+}
+.showcasenav .navbar-nav li  a:hover{
+	background:#bf0c10;
+}
+@media (min-width:768px) {
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b23231+0,b23231+53,b23231+53,5a0809+100 */
+background: #a1080a; /* Old browsers */
+`
+}
+
+.showcasenav .navbar-brand,
+.showcasenav .navbar-nav li{
+
+
+}
+.navbar-default .navbar-nav > .active > a{
+	border:none;
+	
+}
+}
+
+	.showcasenav .navbar-nav form{
+
+margin-right:0 ;
+margin-left:1px;
+			}
+			
+@media (max-width:767px) {
+.showcasenav input[type=text]  {
+	width:90%;
+	float:left;
+}
+.showcasenav .btn {
+	padding-top:17px;
+
+}
+.showcasenav .container{
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #750e0f;
+}
+.showcasenav input[type=submit]{
+	
+	width:100%;
+}
+
+}
+.navbar-form , form{
+border:none;
+	
+}
+
+.topnav  li a:hover{
+	background:#33333e !important;
+}
+.navtxt {
+    color:#ffffff;
+letter-spacing:2px;
+}
+.loggedintab{
+	background-color:#494949;
+}
+.showcasenavtxt{
+	font-size:20px;
+ 
+  color:#ffffff;
+   letter-spacing: 2px;
+}
+.pageheading2{
+	margin-top:50px;
+	font-size:37px;
+    letter-spacing: 2px;
+    margin-bottom:20px;
+    font-family: badaboom;
+}
+.pageheading3{
+	font-size:26px;
+    letter-spacing: 2px;
+    margin-bottom:20px;
+    font-family: badaboom;
+}
+.form2{
+padding:25px;
+	-webkit-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.35);
+box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.35);
+	
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+.formcol{
+		margin-top:30px;
+	margin-bottom:50px;
+}
+.loadspace{
+			padding-top:10px;
+			padding-bottom:10px;
+
+			background-color:#f2efea;
+		}
+#loader {
+	text-align: center;
+	display: none;
+}
+#items { 
+	list-style: none; 
+
+}
+.showcasenav .navbar-toggle,.navbar-toggle {
+	border:0px;
+	    border-color: rgb(255,255,255) !important;
+color:#fff !important;
+}
+* {
+	margin: 0;
+	padding: 0;
+}

@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+ @font-face {
+	font-family: badaboom;
+	src: url(../fonts/badaboom.ttf)
+}
+.login-page {
+  width: 360px;
+}
+.form {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ebebeb+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #ebebeb 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 0%,#ebebeb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+
+position: relative;
+  z-index: 1;
+  width: 300px;
+  padding: 25px;
+  height:100%;
+  color:#000000;
+  -webkit-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.35);
+box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.35);
+margin-left:20px;
+margin-top:30px;
+
+}
+.form input[type=text]  {
+ letter-spacing: 2px;
+	  font-family: badaboom;  outline: 0;
+  background: #d4d4d4;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color:#000000;
+  
+  
+  
+}
+.form select {
+	 letter-spacing: 2px;
+
+		  font-family: badaboom;  outline: 0;
+
+  border: none;
+  background: transparent;
+  width: 150px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  height: 40px;
+    border-radius: 3px;
+  box-shadow: 0px 3px #a3a3a3;
+
+   width: 100%;
+ text-align-last:center;  
+  color:#7a7a7a;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ececec+0,d9d9d9+100 */
+background: #ececec; /* Old browsers */
+background: -moz-linear-gradient(top,  #ececec 0%, #d9d9d9 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ececec 0%,#d9d9d9 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ececec 0%,#d9d9d9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#d9d9d9',GradientType=0 ); /* IE6-9 */
+
+}
+.form input[type=submit] {
+ letter-spacing: 2px;
+	  font-family: badaboom;  text-transform: uppercase;
+  outline: 0;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c02e2b+0,9a2624+100 */
+background: #c02e2b; /* Old browsers */
+background: -moz-linear-gradient(top,  #c02e2b 0%, #9a2624 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #c02e2b 0%,#9a2624 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #c02e2b 0%,#9a2624 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c02e2b', endColorstr='#9a2624',GradientType=0 ); /* IE6-9 */
+
+
+width:256px;
+  border: 0;
+  border-radius: 3px;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 22px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+padding-top:10px;  
+padding-bottom:10px;  
+
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #2598d7;
+  
+}
+.form .message {
+ letter-spacing: 2px;
+	  font-family: badaboom;font-size:17px;
+	  color:#252525;
+  margin: 0px 0 0;
+}
+.form .message a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+/*
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #eeeeee;
+}
+body {
+  
+}
+*/

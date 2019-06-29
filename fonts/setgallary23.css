@@ -1,0 +1,621 @@
+
+@font-face {
+    font-family: badaboom;
+    src: url(../fonts/badaboom.ttf)
+}
+.navbar{
+	border-radius:0px;
+	margin:0px;
+}
+#logo {
+    float: left;
+    margin-top: -20px;
+}
+.vidcontain {
+    position: relative margin-left: 0px;
+}
+#v0 {
+    display: block;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
+body {} svg {
+    top: 35%;
+    transform: translateY(-35%);
+    position: absolute;
+    overflow: hidden;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+}
+@media only screen and (max-width: 650px) {
+    svg {
+        width: 300px;
+    }
+}
+
+/*
+    .wrapper {
+      width:100%;
+      height:100vh;
+    display:block;
+    }
+
+    .wrapper video {
+      object-fit: contain
+     object-fit: fill;
+      object-fit: cover;
+      width:100%;
+      height:100%;
+    }
+	*/
+
+#glass {
+    clip: rect(0px, 60px, 200px, 0px);
+}
+
+p {
+    font-family: sans-serif;
+    line-height: 1.7;
+    color: black;
+    margin: 20px;
+}
+video::-webkit-media-controls {
+    display: none !important;
+}
+video::-webkit-media-controls {
+    display: none !important;
+}
+#rig {
+    max-width: 100%;
+    margin: 0 auto;
+    /*center aligned*/
+    
+    padding: 0;
+    font-size: 0;
+    /* Remember to change it back to normal font size if have captions */
+    
+    list-style: none;
+    background-color: #f2efea;
+	
+	
+}
+#rig li {
+    display: inline-block;
+    *display: inline;
+    /*for IE6 - IE7*/
+    /* width:25%;*/
+    
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	
+	
+}
+/* The wrapper for each item */
+
+.rig-cell {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding-bottom: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+/* If have the image layer */
+
+.rig-img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100% display: block;
+    width: 100%;
+    border: none;
+    /* transform:scale(1);*/
+    /* transition:all 1s; */
+    
+    overflow: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+	
+}
+
+/* If have the overlay layer */
+
+.rig-overlay {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+#rig li:hover .rig-bg {
+-webkit-box-shadow:inset 0px 0px 0px 4px #ff3227;
+    -moz-box-shadow:inset 0px 0px 0px 4px #ff3227;
+    box-shadow:inset 0px 0px 0px 4px #ff3227;
+		background-color:rgba(0,0,0,0.6) ;
+
+    }
+	
+#rig li:hover .rig-overlay {
+	filter: grayscale(90%);
+
+    }
+
+/* If have captions */
+
+#rig li:hover .rig-text {
+    opacity: 1;
+}
+#rig li:hover .rig-subtext {
+    opacity: 1;
+}
+#rig li:hover .rig-bg {
+    
+    opacity: 1;
+}
+@media (max-width: 90000px) {
+    #rig li {
+        width: 20%;
+    }
+}
+@media (max-width: 1900px) {
+    #rig li {
+        width: 25%;
+    }
+}
+@media (max-width: 1660px) {
+    #rig li {
+        width: 25%;
+    }
+}
+@media (max-width: 1422px) {
+    #rig li {
+        width: 25%;
+    }
+}
+@media (max-width: 1188px) {
+    #rig li {
+        width: 25%;
+    }
+}
+@media (max-width: 971px) {
+    #rig li {
+        width: 25%;
+    }
+}
+.rig-bg {
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /*For older IE*/
+    
+    transition: all .3s;
+    /* background-color:#3DC0F1;*/
+}
+@media (min-width: 971px) {
+    .rig-text {
+        padding-top: 100px;
+        height: 100%;
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Oswald', sans-serif;
+        font-weight: normal!important;
+        top: 40%;
+	 letter-spacing: 3px;
+    font-family: badaboom;
+    font-size:30px;
+
+    color:#f3291e;
+        /*For older IE*/
+        
+        transform: translateY(-40px);
+        transition: all .3s;
+		opacity:0;
+
+    }
+    .rig-subtext {
+        padding-top: 100px;
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: 'Oswald', sans-serif;
+        font-weight: normal!important;
+        top: 40%;
+
+	 letter-spacing: 3px;
+    font-family: badaboom;
+    font-size:30px;
+    color:#ffffff;
+opacity:0;
+
+}
+@media (max-width: 617px) {
+    #rig li {
+        width: 33.3333333333%;
+    }
+}
+@font-face {
+    font-family: badaboom;
+    src: url(../fonts/badaboom.ttf)
+}
+#search {} #myPopup {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+</style> <style> #scene {} #imgurl {
+    display: none;
+}
+.formtxt {
+    color: #ffffff;
+}
+form submit {
+    color: #000;
+}
+form input {
+    color: #000;
+}
+#upload-photo {} .uploadhome {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    height: 500px;
+    margin-top: -250px;
+    /* Half the height */
+    
+    margin-left: -160px;
+    /* Half the width */
+}
+}
+.uploadhome input {
+    width:213px;
+}
+.navbar a:link {
+    color:#ffffff;
+}
+/* visited link */
+
+.navbar a:visited {
+    color:#ffffff;
+}
+/* mouse over link */
+
+.navbar a:hover {
+    color:#ffffff;
+}
+/* selected link */
+
+.navbar a:active {
+    color:#ffffff;
+}
+#scene {
+    margin: 0px auto;
+    width: 100%;
+    min-height: 950px;
+    border-radius: 6px;
+    background-image: url('../images/texture.png');
+}
+img[src=""] {
+    display: none;
+}
+/*  SECTIONS  */
+
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+/*  COLUMN SETUP  */
+
+.col {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+    float:left;
+    padding-bottom: 10%;
+    text-align: center;
+    margin:1px;
+    overflow: hidden;
+}
+@media (min-width: 481px) {
+    .col {}
+}
+.col:first-child {
+    margin-left: 0;
+}
+/*  GROUPING  */
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1;
+    /* For IE 6/7 */
+}
+/*  GRID OF FIVE  */
+
+.span_5_of_5 {
+    width: 100%;
+}
+.span_4_of_5 {
+    width: 79.68%;
+}
+.span_3_of_5 {
+    width: 59.36%;
+}
+.span_2_of_5 {
+    width: 39.04%;
+}
+.span_1_of_5 {
+    width: 18.72%;
+}
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+    .span_1_of_5,
+    .span_2_of_5,
+    .span_3_of_5,
+    .span_4_of_5,
+    .span_5_of_5 {
+        width: 100%;
+    }
+}
+.login-page {
+    position:absolute;
+}
+.scrollbar {
+    height:230px;
+    overflow:auto;
+    margin-bottom: 25px;
+    padding-right:20px;
+}
+.force-overflow {}
+/*
+ *  STYLE 2
+ */
+
+#style-2::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #dddddd;
+}
+#style-2::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+#style-2::-webkit-scrollbar-thumb {
+    background-color: #909090;
+}
+.form .sub-message {
+    letter-spacing: 2px;
+    font-family: badaboom;
+    font-size:20px;
+    margin: 15px 0 0;
+    color: #000000;
+}
+
+.topnav{
+	z-index:99;
+	  min-height: 50px;
+	top-margin:0px;
+    color:#ffffff;
+    border-style: none;
+    border-radius: 0px;
+    width:100%;
+    letter-spacing: 2px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+61,1993d2+61,1993d2+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+70,000000+71,1993d2+71,1993d2+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+71,000000+77,000000+77,1993d2+77,1993d2+77,1993d2+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+71,000000+77,000000+77,1993d2+77,2598d7+77,1993d2+100 */
+    
+
+    /* Old browsers */
+  
+    
+
+    margin:auto;
+
+    border:none;
+    shadow:none;
+	margin-bottom:0px;
+}
+.navbar a {
+    font-family: badaboom;
+    font-size:20px;
+}
+.navbar-right {} .editorbg {
+
+}
+#customisation {
+    margin-top:50px;
+	    margin-bottom:50px;
+
+}
+.login-form h2 {
+    font-size:45px;
+    letter-spacing: 2px;
+    font-family: badaboom;
+}
+.greytxt {
+    color:#444444;
+}
+.yellowtxt {
+    color:#e00904;
+}
+.navbar{
+	color:#ffffff;
+}
+
+
+.showcasenav input[type=text]  {
+ letter-spacing: 2px;
+	  font-family: badaboom;  outline: 0;
+  background: #f2f2f2;
+  border: 0;
+  padding: 30px;
+  box-sizing: border-box;
+  font-size: 24px;
+  color:#000000;
+  
+border-radius:0px;}
+.showcasenav input[type=submit] {
+ letter-spacing: 2px;
+	  font-family: badaboom;  text-transform: uppercase;
+  outline: 0;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#932736+0,932736+5,bc2126+6,bc2126+17,b23231+17,5a0809+88,5a0809+88,5a0809+90,5a0809+91,5a0809+91,5a0809+93,932736+93,932736+100 */
+background: #932736; /* Old browsers */
+background: -moz-linear-gradient(top,  #932736 0%, #932736 5%, #bc2126 6%, #bc2126 17%, #b23231 17%, #5a0809 88%, #5a0809 88%, #5a0809 90%, #5a0809 91%, #5a0809 91%, #5a0809 93%, #932736 93%, #932736 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #932736 0%,#932736 5%,#bc2126 6%,#bc2126 17%,#b23231 17%,#5a0809 88%,#5a0809 88%,#5a0809 90%,#5a0809 91%,#5a0809 91%,#5a0809 93%,#932736 93%,#932736 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #932736 0%,#932736 5%,#bc2126 6%,#bc2126 17%,#b23231 17%,#5a0809 88%,#5a0809 88%,#5a0809 90%,#5a0809 91%,#5a0809 91%,#5a0809 93%,#932736 93%,#932736 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#932736', endColorstr='#932736',GradientType=0 ); /* IE6-9 */
+-webkit-box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.56);
+-moz-box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.56);
+box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.56);
+
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 24px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+@media (min-width:768px) {
+    .showcasenav {
+border:none;
+	margin-bottom:0px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#932736+0,932736+5,bc2126+6,bc2126+17,b23231+17,620304+87,5a0809+88,5a0809+88,5a0809+90,5a0809+91,5a0809+91,5a0809+93,932736+93,932736+100 */
+background: #932736; /* Old browsers */
+background: -moz-linear-gradient(top,  #932736 0%, #932736 5%, #bc2126 6%, #bc2126 17%, #b23231 17%, #620304 87%, #5a0809 88%, #5a0809 88%, #5a0809 90%, #5a0809 91%, #5a0809 91%, #5a0809 93%, #932736 93%, #932736 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #932736 0%,#932736 5%,#bc2126 6%,#bc2126 17%,#b23231 17%,#620304 87%,#5a0809 88%,#5a0809 88%,#5a0809 90%,#5a0809 91%,#5a0809 91%,#5a0809 93%,#932736 93%,#932736 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #932736 0%,#932736 5%,#bc2126 6%,#bc2126 17%,#b23231 17%,#620304 87%,#5a0809 88%,#5a0809 88%,#5a0809 90%,#5a0809 91%,#5a0809 91%,#5a0809 93%,#932736 93%,#932736 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#932736', endColorstr='#932736',GradientType=0 ); /* IE6-9 */
+color:#ffffff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #000000;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b23231+0,b23231+53,b23231+53,5a0809+100 */
+background: #932736; /* Old browsers */
+background: -moz-linear-gradient(top,  #932736 0%, #932736 5%, #bc2126 6%, #bc2126 17%, #b23231 17%, #620304 87%, #5a0809 88%, #5a0809 88%, #5a0809 90%, #5a0809 91%, #5a0809 91%, #5a0809 93%, #932736 93%, #932736 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #932736 0%,#932736 5%,#bc2126 6%,#bc2126 17%,#b23231 17%,#620304 87%,#5a0809 88%,#5a0809 88%,#5a0809 90%,#5a0809 91%,#5a0809 91%,#5a0809 93%,#932736 93%,#932736 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #932736 0%,#932736 5%,#bc2126 6%,#bc2126 17%,#b23231 17%,#620304 87%,#5a0809 88%,#5a0809 88%,#5a0809 90%,#5a0809 91%,#5a0809 91%,#5a0809 93%,#932736 93%,#932736 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#932736', endColorstr='#932736',GradientType=0 ); /* IE6-9 */
+-webkit-box-shadow: inset 0px 0px 13px 4px rgba(0,0,0,0.56);
+-moz-box-shadow: inset 0px 0px 13px 4px rgba(0,0,0,0.56);
+box-shadow: inset 0px 0px 13px 4px rgba(0,0,0,0.56);
+
+
+}
+.showcasenav .navbar-brand,
+.showcasenav .navbar-nav li a {
+    line-height: 80px;
+    height: 80px;
+    padding-top: 0;
+	
+}
+}
+@media (max-width:768px) {
+    .showcasenav {
+	background-color:#972221;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #750e0f;
+}
+.showcasenav input[type=submit]{
+	
+	width:100%;
+}
+.nav {
+	text-align:center;
+}
+}
+.navbar-form , form{
+border:none;
+	
+}
+.navtxt {
+    color:#ffffff;
+letter-spacing:2px;
+}
+.loggedintab{
+	background-color:#494949;
+}
+.showcasenavtxt{
+	font-size:20px;
+ 
+  color:#ffffff;
+   letter-spacing: 2px;
+}
+.pageheading2{
+	font-size:45px;
+    letter-spacing: 2px;
+    margin-bottom:20px;
+    font-family: badaboom;
+}
+.pageheading3{
+	font-size:26px;
+    letter-spacing: 2px;
+    margin-bottom:20px;
+    font-family: badaboom;
+}
+.form2{
+padding:25px;
+	-webkit-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.35);
+box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.35);
+	
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+.formcol{
+		margin-top:50px;
+	margin-bottom:50px;
+}
